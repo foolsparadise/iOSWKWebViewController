@@ -5,6 +5,8 @@ URL File type support: all WKwebView support
 Encoding support: UTF-8, GB15030, GBK, GB2312  
 
 ## Usage:  
+add 1 row in plist : App Transport Security Settings(2row: Allow Arbitrary Loads:YES, Allow Arbitrary Loads in Web Content:YES)  
+add Framework: WebKit.framework  
 import "iOSWKWebViewController.h"  
 iOSWKWebViewController * vc = [[iOSWKWebViewController alloc] init];  
 vc.webURLstring = @"https://iOS.com";  
